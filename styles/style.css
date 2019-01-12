@@ -66,3 +66,7 @@ button:active {
     transform: translateY(4px)
     
 }
+
+#preload {
+    display: none;
+}
