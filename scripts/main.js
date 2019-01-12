@@ -6,7 +6,7 @@
 var videocontainer = document.getElementById('myVideo');
 var newmp4 = 'videos/2.mp4';
 var myButton = document.querySelector('button')
-
+var buttondisplay = 'block'
 videocontainer.addEventListener('ended',myHandler,false);
 function myHandler(e) {
     videocontainer.pause();
@@ -14,7 +14,7 @@ function myHandler(e) {
     videocontainer.load();
     videocontainer.play();
     videocontainer.loop = true;
-    myButton.style.display = "block";
+    myButton.style.display = buttondisplay;
     videocontainer.removeEventListener('ended',myHandler,false);
 };
 
@@ -26,5 +26,6 @@ myButton.onclick = function() {
     newmp4 = 'videos/4.mp4'
     videocontainer.loop = false;
     videocontainer.addEventListener('ended',myHandler,false);
+    buttondisplay = 'none';
 
-}
+};
