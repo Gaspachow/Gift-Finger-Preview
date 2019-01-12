@@ -31,16 +31,38 @@ body {
     margin: 50px auto;
     background-color: rgb(255, 255, 255);
     padding: 0 20px 20px 20px ;
-    border: 1px solid black;
+    border: 1px solid white;
+    font-family: 'Karla', sans-serif;
+
 }
 
 video {
     display: block;
-    margin: 0 auto;
-    height: 350px;
+    margin: 20px auto;
+    height: 500px;
 }
 
 button {
     display: block;
-    margin: auto auto;
+    margin: 40px auto;
+    font-family: inherit;
+    background-color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border: 3px solid black;
+    font-size: 2em;
+    color: black;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+
+}
+
+button:active {
+    transform: translateY(4px)
+    
 }
