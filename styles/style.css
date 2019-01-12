@@ -43,7 +43,7 @@ video {
 }
 
 button {
-    display: block;
+    display: none;
     margin: 40px auto;
     font-family: inherit;
     background-color: white;
