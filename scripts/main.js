@@ -21,7 +21,7 @@ function myHandler(e) {
 };
 
 function fuckYou() {
-    header.textContent = 'Fuck you, buddy.';
+    header.textContent = '';
     videocontainer.removeEventListener('ended',fuckYou,false);
 }
 
