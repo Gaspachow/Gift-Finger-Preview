@@ -31,7 +31,7 @@ function fuckYou() {
 //Button to open gift
 
 myButton.onclick = function() {
-    videocontainer2.setAttribute('class','hidden_video');
+    //videocontainer2.setAttribute('class','hidden_video');
     videocontainer3.setAttribute('class', 'shown_video')
     videocontainer3.load();
     videocontainer3.play();
