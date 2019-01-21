@@ -54,6 +54,7 @@ button {
     color: black;
     transition-duration: 0.4s;
     border-radius: 5px;
+
 }
 
 button:hover {
@@ -69,4 +70,26 @@ button:active {
 
 #preload {
     display: none;
+}
+
+.hidden_video {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.shown_video {
+    opacity: 1;
+}
+
+#myVideo, #myVideo2, #myVideo3 {
+    position: absolute;
+    margin: 50px auto 50px auto;
+    left: 1em;
+    right: 1em;
+}
+
+#videolist {
+    text-align: center;
+    height: 550px;
 }

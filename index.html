@@ -11,9 +11,19 @@
   </head>
   <body>
     <h1 id="header">Hey, wanna see something?</h1>
-   <video id="myVideo" autoplay playsinline muted>
-     <source id="videoSource" src="videos/1.mp4" type="video/mp4">
-   </video>
+    <div id="videolist">
+      <video class="disp_video" id="myVideo" autoplay playsinline muted>
+        <source id="videoSource" src="videos/1.mp4" type="video/mp4">
+      </video>
+
+      <video class="hidden_video" id="myVideo2" autoplay playsinline muted>
+        <source id="videoSource" src="videos/2.mp4" type="video/mp4">
+      </video>
+
+      <video class="hidden_video" id="myVideo3" autoplay playsinline muted>
+        <source id="videoSource" src="videos/3.mp4" type="video/mp4">
+      </video>
+    </div>  
 
     <button><strong>Open Your Gift</strong></button>
     <video id="preload" autoplay playsinline muted>
