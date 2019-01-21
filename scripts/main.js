@@ -29,10 +29,10 @@ function fuckYou() {
 
 myButton.onclick = function() {
     videocontainer.setAttribute('src','videos/3.mp4');
-    newmp4 = 'videos/4.mp4'
+    //newmp4 = 'videos/4.mp4'
     videocontainer.loop = false;
-    videocontainer.addEventListener('ended',myHandler,false)
-    videocontainer.addEventListener('ended',fuckYou,false)
+    //videocontainer.addEventListener('ended',myHandler,false)
+    //videocontainer.addEventListener('ended',fuckYou,false)
     buttondisplay = 'none';
     myButton.style.display = buttondisplay;
 
