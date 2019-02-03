@@ -11,6 +11,22 @@ var myButton = document.querySelector('button');
 var buttondisplay = 'block';
 var header = document.getElementById('header');
 
+function randomIntro() {
+  let random = Math.random()
+  let introVid;
+  if (random > 0.5) {
+    introVid = '1a';
+  } else {
+    introVid = '1b';
+  }
+
+  videocontainer.src = `videos/${introVid}.mp4`
+
+}
+
+randomIntro();
+
+
 videocontainer.addEventListener('ended',replaceVid,false);
 
 function replaceVid(e) {
@@ -21,7 +37,7 @@ function replaceVid(e) {
     videocontainer2.loop = true;
     myButton.style.display = buttondisplay;
     videocontainer.removeEventListener('ended',replaceVid,false);
-};
+}
 
 function replaceVidIdle(e) {
     videocontainer.pause();
